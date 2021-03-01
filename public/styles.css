@@ -1,6 +1,6 @@
 
 html{
-  background: repeating-conic-gradient( from 346deg at 25% 25%, rgba(56, 136, 56, 0.109), rgb(42 37 65 / 11%) 2deg 5deg, rgb(60 86 60 / 85%), rgb(131 131 58 / 58%) 15deg17deg, rgba(31, 51, 31, 0.233) 20deg) #092821fa;
+  background: repeating-conic-gradient( from 346deg at 25% 25%, rgba(56, 136, 56, 0.109), rgb(42 37 65 / 11%) 2deg 5deg, rgb(60 86 60 / 85%), rgb(131 131 58 / 58%) 15deg17deg, rgba(31, 51, 31, 0.233) 20deg) #080606ec no-repeat;
   backdrop-filter: brightness(0.1) blur(55px) hue-rotate(251deg);
   margin: 0px;
   height: 100%;
@@ -10,15 +10,19 @@ html{
 body {
   font-size: 120%;
   font-family: Arial;
-  height: 100%
+}
+
+html, #b1, .wrapper {
+  height: 100%;
+  margin: 0px;
+  min-height: 1250px;
 }
 
 #b1{
-background: repeating-conic-gradient( from 346deg at 25% 25%, rgb(191 199 153 / 10%), rgb(29 29 34 / 32%) 2deg 5deg, rgb(19 27 17 / 98%), rgb(16 68 50 / 43%) 15deg 47deg, rgb(0 0 0 / 45%) 20deg) #232c3b8f;
+background: repeating-conic-gradient( from 346deg at 25% 25%, rgb(191 199 153 / 10%), rgb(29 29 34 / 32%) 2deg 5deg, rgb(19 27 17 / 98%), rgb(16 68 50 / 43%) 15deg 47deg, rgb(0 0 0 / 45%) 20deg) #232c3b8f no-repeat;
 backdrop-filter: brightness(0.11) blur(15px) hue-rotate(290deg);
 color: snow;
 margin: 0px;
-padding-bottom: 550px;
 min-height: 1100px;
 }
 
@@ -76,6 +80,6 @@ td, th {
 
 #myChart {
   margin-top: 35px;
-  background-color: #85871a41;
+  background-color: #6d6b6b29;
 }
 
