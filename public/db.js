@@ -13,8 +13,8 @@ Summary:
 */
 
 let db;
-// this creates a new indexedDB request for a database called "budget"
 
+// this creates a new indexedDB request for a database called "budget"
 const request = indexedDB.open("budget", 1);
 
 request.onupgradeneeded = function(event) {
@@ -33,16 +33,56 @@ request.onsuccess = function(event) {
 };
 
 request.onerror = function(event) {
-    //if error, logged to console 
-    console.log(" \n  Error found @ request.onerror " 
+    //if error, logged to console
+    console.log(" \n  Error found @ request.onerror "
     + " \n   Error message:    " + event.target.errorCode);
 }
 
 
-
 // Delcare function: saveRecord
- 
+  function saveRecord(record){
+    // creates a new transaction  on the pending db with readwrite access
+    const transaction = db.transaction(["pending"],"readwrite");
+    // access pending object store
+    const store = transaction.objectStore("pending");
+    // adds record to store with the add method
+    store.add(record);
+  }
+
 
 // Declare function: checkDatabase ( handler function for event listener set below)
+function checkDatabase() {
+    // open a transaction on your pending db
+    const transaction = db.transaction(["pending"], "readwrite");
+    // access your pending object store
+    const store = transaction.objectStore("pending");
+    // get all records from store and set to a variable
+    const getAll = store.getAll();
+    getAll.onsuccess = function() {
+      if (getAll.result.length > 0) {
+        fetch("/api/transaction/bulk", {
+          method: "POST",
+          body: JSON.stringify(getAll.result),
+          headers: {
+            Accept: "application/json, text/plain, */*",
+            "Content-Type": "application/json"
+          }
+        })
+      .then (response => response.json())
+      .then ( () => {
+         // if success, open transactions on pending store. 
+          const transaction = db.transaction(["pending"], "readwrite");
+
+      // acess pending  item s in  store
+          const store = transaction.objectStore("pending");
+
+         // clear items in store
+          store.clear();
+        });
+      }
+    };
+  }
 
 //  Set an event listener that runs checkDatabase function if window client is "online"
+
+window.addEventListener("online", checkDatabase);
