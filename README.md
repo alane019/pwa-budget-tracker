@@ -8,10 +8,10 @@
 ---
 
 <i> Manage your personal finances quickly and effectively. Without a spreadsheet. With or without a reliable connection to the web.
-    <br> 
+    <br>
 </i>
 
-## 📝 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Getting Started](#getting_started)
