@@ -13,7 +13,9 @@
 
 Heroku installation → https://pwa-budget-tracker-03022021.herokuapp.com/
 
- ![Benjamin Bannekat](./assets/images/screen-main.JPG).
+
+
+ <img src="./assets/images/screen-main.JPG" alt="drawing" style="display: block; margin-left: auto; margin-right: auto;" min-width="250px" width="80%"/>
 
 ## Table of Contents
 
