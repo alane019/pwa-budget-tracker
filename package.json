@@ -18,7 +18,7 @@
     "url": "https://github.com/alane019/pwa-budget-tracker"
   },
   "engines": {
-	"node": "14.x"
+    "node": "14.x"
   },
   "homepage": "https://github.com/alane019/pwa-budget-tracker",
   "dependencies": {
