@@ -5,10 +5,9 @@
 
 </div>
 
----
+
 
 <i> Manage your personal finances quickly and effectively. Without a spreadsheet. With or without a reliable connection to the web.
-    <br>
 </i>
 
 ## Table of Contents
