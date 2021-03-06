@@ -49,7 +49,7 @@ table {
 }
 
 td, th {
-  border: 1px solid #dddddd;
+  border: 1px solid #d3d3d3;
   text-align: left;
   padding: 8px;
   background-color: #00000054;
@@ -57,7 +57,15 @@ td, th {
 
 
 .error {
-  color: rgba(182, 19, 19, 0.938);
+  color: #ffadade3;
+  text-shadow: #310404 0px 0px 19px;
+  margin-right: auto;
+  display: inline-grid;
+  padding: 2px 20px 3px;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  font-size: 115%;
+  font-weight: 700;
 }
 
 .wrapper {
@@ -95,9 +103,8 @@ td, th {
   margin-left: 5px;
   margin-right: 5px;
   background-color: #6d6b6b2b;
-  background:  linear-gradient(45deg, rgb(21, 27, 21), rgb(21, 23, 27) 55px) rgba(255, 0, 0, 0.294);
-  backdrop-filter: hue-rotate(90deg);
-  box-shadow: rgba(0, 0, 0, 0.37) 0 0 6px 1px;
-
+  background: linear-gradient(359deg, rgb(27 27 27 / 10%), rgb(31 31 31), rgb(27 27 27 / 10%), rgb(31 31 31) 680px);
+  box-shadow: rgb(75 75 75 / 13%);
+  backdrop-filter: hue-rotate(357deg);
 }
 

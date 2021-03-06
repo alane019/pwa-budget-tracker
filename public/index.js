@@ -85,7 +85,7 @@ function sendTransaction(isAdding) {
 
   // validate form
   if (nameEl.value === "" || amountEl.value === "") {
-    errorEl.textContent = "Missing Information";
+    errorEl.textContent = "Enter transaction name and amount.";
     return;
   }
   else {
@@ -111,7 +111,7 @@ function sendTransaction(isAdding) {
   populateChart();
   populateTable();
   populateTotal();
-  
+
   // also send to server
   fetch("/api/transaction", {
     method: "POST",
@@ -121,12 +121,12 @@ function sendTransaction(isAdding) {
       "Content-Type": "application/json"
     }
   })
-  .then(response => {    
+  .then(response => {
     return response.json();
   })
   .then(data => {
     if (data.errors) {
-      errorEl.textContent = "Missing Information";
+      errorEl.textContent = "Enter transaction information";
     }
     else {
       // clear form
