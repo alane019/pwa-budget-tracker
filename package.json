@@ -1,4 +1,4 @@
-{
+{		  
   "name": "pwa-budget-tracker-03022021",
   "version": "1.0.0",
   "description": "",
@@ -13,14 +13,14 @@
     "url": "git+https://github.com/alane019/pwa-budget-tracker"
   },
   "author": "trilogy-adam-l",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alane019/pwa-budget-tracker.com"
+    "url": "https://github.com/alane019/pwa-budget-tracker"
   },
   "engines": {
     "node": "14.x"
   },
-  "homepage": "https://github.com/alane019/pwa-budget-tracker.com",
+  "homepage": "https://github.com/alane019/pwa-budget-tracker",
   "dependencies": {
     "compression": "^1.7.4",
     "express": "^4.17.1",

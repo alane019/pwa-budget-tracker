@@ -32,7 +32,7 @@ request.onsuccess = function (event) {
 };
 
 request.onerror = function (event) {
-  //if error, logged to console
+  //if error, log to console
   console.log(
     " \n  Error found @ request.onerror " +
       " \n   Error message:    " +
@@ -69,8 +69,8 @@ function checkDatabase() {
         body: JSON.stringify(getAll.result),
         headers: {
           Accept: "application/json, text/plain, */*",
-          "Content-Type": "application/json",
-        },
+          "Content-Type": "application/json"
+        }
       })
         .then((response) => response.json())
         .then(() => {
