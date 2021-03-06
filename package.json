@@ -15,12 +15,12 @@
   "author": "trilogy-adam-l",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alane019/pwa-budget-tracker"
+    "url": "https://github.com/alane019/pwa-budget-tracker.com"
   },
   "engines": {
     "node": "14.x"
   },
-  "homepage": "https://github.com/alane019/pwa-budget-tracker",
+  "homepage": "https://github.com/alane019/pwa-budget-tracker.com",
   "dependencies": {
     "compression": "^1.7.4",
     "express": "^4.17.1",
